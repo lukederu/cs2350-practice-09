@@ -8,8 +8,7 @@ module.exports = {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
-    // static: path.join(__dirname, 'dist'), // Webpack 5
+    static: path.join(__dirname, 'dist'), // Webpack 5
     historyApiFallback: true,
     open: true,
     compress: true,
